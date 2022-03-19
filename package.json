@@ -1,0 +1,40 @@
+{
+  "name": "guruhotel-internal-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".dist/index.js",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloscuxin/guruhotel-Internal-tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloscuxin/guruhotel-Internal-tool/issues"
+  },
+  "homepage": "https://github.com/carloscuxin/guruhotel-Internal-tool#readme",
+  "dependencies": {
+    "@typegoose/typegoose": "^9.7.0",
+    "apollo-server": "^3.6.4",
+    "axios": "^0.26.1",
+    "class-validator": "^0.13.2",
+    "graphql": "^15.3.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.6",
+    "node-cache": "^5.1.2",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2"
+  }
+}

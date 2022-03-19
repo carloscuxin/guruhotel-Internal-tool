@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  node-app:
+    container_name: node-app
+    restart: unless-stopped
+    build: .
+    ports:
+      - 9000:9000
+    command: sh ./entrypoint.sh
+    networks:
+      - default
+    volumes:
+      - .:/code
+    depends_on:
+      - mongo-db
+  mongo-db:
+    container_name: mongo-db
+    image: mongo
+    networks:
+      - default
+    volumes:
+      - dbdata:/data/db
+
+volumes:
+  dbdata:
+
+networks:
+  default:
+    name: external-api-network
